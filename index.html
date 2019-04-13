@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <title>VideosTube</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!-- Media CSS -->
+  <link rel="stylesheet" href="css/media.css" type="text/css" />
+</head>
+<body>
+
+  <!-- Header Starts -->
+
+  <header class="fixed-header">
+    <div class="flex align-center">
+      <div class="flex align-center flex-1">
+        <div class="dashboard-name pull-left">
+          <h1>VideosTube</h1>
+        </div>
+        <div class="hamburger-menu-position pull-left">
+          <div class="hamburger-menu">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="flex align-center justify-end flex-1">
+        <div class="search-option">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control form-search" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-search" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header Ends -->
+
+  <!-- Sidebar Menu Starts -->
+
+  <nav class="sidebar">
+    <ul class="sidebar-listing">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Trending</a></li>
+      <li>
+        <a href="#">Subscriptions <i class="fas fa-sort-down"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="#">FreeCodeCamp</a></li>
+          <li><a href="#">LearnEx - English</a></li>
+          <li><a href="#">Sports Tak</a></li>
+          <li><a href="#">IELTS Mantrahs</a></li>
+          <li><a href="#">FrontEnd Tips</a></li>
+          <li><a href="#">Songs & Garba</a></li>
+          <li><a href="#">Graphic Designing Learning</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Watch Later</a></li>
+      <li>
+        <a href="#">UI Elements <i class="fas fa-sort-down"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="#">General</a></li>
+          <li><a href="#">Icons</a></li>
+          <li><a href="#">Buttons</a></li>
+          <li><a href="#">Typography</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Forms <i class="fas fa-sort-down"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="#">General Forms</a></li>
+          <li><a href="#">Form Validations</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Language <i class="fas fa-sort-down"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="#">Spanish</a></li>
+          <li><a href="#">German</a></li>
+          <li><a href="#">Italian</a></li>
+          <li><a href="#">French</a></li>
+          <li><a href="#">English</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Liked Videos</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Live</a></li>
+      <li><a href="#">VideosTube Movies</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar Menu Ends -->
+
+  <div class="wrapper active">
+    
+    <!-- First Section Starts -->
+
+    <div class="container-fluid">
+      <div class="image-filter" id="image-filter">
+        <div class="row filter-row">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-1.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing john col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-2.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">John Doe</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing jonathan col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-3.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Jonathan Doe</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-4.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing robert col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-5.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Robert Brown</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing harry col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-6.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Harry</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing pitter col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-7.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Pitter Devidson</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing kahofreg col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-8.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Kahofreg</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing miran col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-9.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Miran</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing robert col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-10.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Robert Brown</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing robert col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-11.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Robert Brown</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-12.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-13.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-14.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-left-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-15.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 showing angelina col-right-mob">
+            <figure class="user-figure relative">
+              <img src="images/user-1.png" class="img-responsive user-images user-img-width" alt="">
+              <figcaption class="user-caption absolute full-width">
+                <div class="row remove-margin mob-flex mob-align-center">
+                  <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 user-border-rights">
+                    <p class="user-age">Age</p>
+                    <p class="user-age-details">25</p>
+                  </div>
+                  <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9 mob-location">
+                    <div class="flex align-center">
+                      <div class="flex-3">
+                        <p class="user-name">Angelina Jolie</p>
+                        <div class="flex align-center justify-between">
+                          <div class="flex justify-start">
+                            <p class="pr-5"><i class="fas fa-map-marker-alt"></i> 19km</p>
+                          </div>
+                          <div class="flex align-center justify-end live-icons">
+                            <a href="#" class="btn btn-sm btn-danger btn-live">Live</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Section Ends -->
+
+  </div>
+
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

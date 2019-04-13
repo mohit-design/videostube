@@ -1,0 +1,119 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Lobster-Regular"; src: url("../font/Lobster-Regular.ttf"); }
+@font-face { font-family: "Cairo-Light"; src: url("../font/Cairo-Light.ttf"); }
+@font-face { font-family: "Cairo-Regular"; src: url("../font/Cairo-Regular.ttf"); }
+@font-face { font-family: "Cairo-SemiBold"; src: url("../font/Cairo-SemiBold.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { font-size: 10px; letter-spacing: 0.7px; }
+body { background-color: #fff; }
+h1,h2,h3,h4,h5,h6,p,ul,ol { margin: 0;padding: 0; }
+li { list-style: none; }
+a,a:hover,a:focus { text-decoration: none; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.img-auto { margin: 0 auto; }
+.flex { display: flex; }
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+.flex-1 { flex: 1; }
+.flex-3 { flex: 3; }
+.justify-start { justify-content: flex-start; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.pr-5 { padding-right: 5px; }
+.full-width { width: 100%; }
+p { color: #fff; font-family: "Cairo-Light"; font-size: 1.6rem; letter-spacing: 1px; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Header Starts -------*/
+
+.fixed-header { background-image: linear-gradient(to right, #502f10, #583928); position: fixed; top: 0; z-index: 9999; width: 100%; }
+.dashboard-name { order: 2; text-align: center; }
+.dashboard-name > h1 { color: #fff; font-family: "Lobster-Regular"; font-size: 3.6rem; }
+
+/*------- Header Ends -------*/
+
+/*------- Hamburger Menu CSS Starts -------*/
+
+.hamburger-menu-position { order: 1; padding-right: 15px; }
+.hamburger-menu { background-color: #513114; cursor: pointer; height: 50px; width: 50px; position: relative; }
+.hamburger-menu span { position: absolute; height: 2px; width: 25px; background-color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.hamburger-menu span:before,
+.hamburger-menu span:after { content: ""; background-color: #fff; height: 2px; width: 20px; position: absolute; top: 7px; transition: 0.3s linear; }
+.hamburger-menu span:before { top: -7px; }
+
+/*------- Hamburger Menu CSS Ends -------*/
+
+/*------- Search Button Starts -------*/
+
+.form-search { background-color: #000; border: 2px solid #fff; border-radius: 0; box-shadow: none; color: #fff; font-family: "Cairo-Regular"; letter-spacing: 1px; }
+.form-search:focus { box-shadow: none; border-color: #000; }
+.form-search::placeholder { color: #fff; opacity: 1; }
+.form-search:-ms-input-placeholder { color: #fff; }
+.form-search::-ms-input-placeholder { color: #fff; }
+.search-option { margin-right: 15px; }
+.btn-search { background-color: #fff; color: #000; }
+
+/*------- Search Button Ends -------*/
+
+/*------- Sidebar Menu Starts -------*/
+
+.sidebar { background: url("../images/sidebar.jpg") no-repeat top/cover; height: 100%; left: 0; overflow-y: auto; position: fixed; top: 50px; transition: 0.5s; width: 250px; z-index: 9999; }
+.sidebar.active { transform: translateX(-100%); }
+.sidebar-listing > li > a,
+.sidebar-submenu > li > a { background-color: transparent; color: #fff; display: block;  font-family: "Cairo-Regular"; font-size: 1.8rem; letter-spacing: 1px; padding: 10px 30px; transition: 0.3s linear; }
+.sidebar-submenu > li > a { background-color: #553620ba; color: #fff; font-size: 1.6rem; padding: 5px 30px; }
+.sidebar-listing > li > a:hover,
+.sidebar-listing > li.active > a { background-color: #9a5827; }
+.sidebar-submenu > li > a:hover { background-color: #ad6d3fb5; color: #fff; }
+.sidebar-listing > li > a > i { float: right; }
+.sidebar-submenu { display: none; }
+
+/*------- Sidebar Menu Ends -------*/
+
+/*------- Main Wrapper Starts -------*/
+
+.wrapper { margin-left: 0; padding-top: 50px; transition: 0.5s; }
+.wrapper.active { margin-left: 250px; }
+
+/*------- Main Wrapper Ends -------*/
+
+/*------- Image and Overlay Effects Starts -------*/
+
+.image-filter { margin-top: 15px; }
+.user-img-width { width: 100%; }
+.user-caption { background-color: #00000077; border-radius: 0 0 6px 6px; bottom: 0; padding: 10px 0; }
+.user-caption p { font-size: 1.4rem; }
+.user-age, .user-name { margin-bottom: 5px; }
+.user-caption i { color: #fff; font-size: 1.4rem; }
+.btn-live { font-family: "Cairo-Regular"; font-size: 1.2rem; letter-spacing: 1px; padding: 0 5px; }
+.live-icons a { margin-right: 5px; }
+.live-icons a:last-child { margin-right: 0; }
+.user-caption p.user-age-details { font-size: 1.4rem; }
+.remove-margin { margin-left: 0; margin-right: 0; }
+.user-border-rights { border-right: 1px solid #ffffff47; }
+.user-figure { overflow: hidden; margin-bottom: 30px; }
+.user-images { border-radius: 4px; transition: 0.5s linear; }
+.user-figure:hover .user-images { filter: brightness(50%); transform: scale(1.2); }
+
+/*------- Image and Overlay Effects Ends -------*/
+
+/*------- Custom Scrollbar Section Starts -------*/
+
+::-webkit-scrollbar { width: 15px; transition: 2s linear; }
+::-webkit-scrollbar-track { background-color: #fff; }
+::-webkit-scrollbar-thumb { background-color: #502f10; }
+::-webkit-scrollbar-thumb:hover { background-color: #000; }
+
+/*------- Custom Scrollbar Section Ends -------*/
